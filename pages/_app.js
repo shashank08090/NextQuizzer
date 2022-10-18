@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import Head from "next/head";
-import "./Header/Header.css";
+import "./Header/Header.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Footer/Footer.css";
 function MyApp({ Component, pageProps }) {
