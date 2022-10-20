@@ -8,7 +8,7 @@ export default async function handler(req, res) {
   if (!user) {
     return res.json({ status: "Not able to find the user" });
   } else {
-    res.json({ msg: " login successful" });
+    res.json({ msg: email });
     // res.redirect("/home");
   }
 }

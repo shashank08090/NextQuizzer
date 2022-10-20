@@ -3,6 +3,7 @@ import Head from "next/head";
 import "./Header/Header.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Footer/Footer.css";
+import "./Register/Register.scss";
 function MyApp({ Component, pageProps }) {
   return (
     <>
