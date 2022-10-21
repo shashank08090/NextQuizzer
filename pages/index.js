@@ -7,7 +7,7 @@ import Register from "./Register/Register.jsx";
 import Footer from "./Footer/Footer.jsx";
 import { useEffect } from "react";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
-import Quiz from "./quiz";
+import Quiz from "./quiz.jsx";
 export default function Home() {
   const [logged, isloggedin] = useState("false");
 
