@@ -1,12 +1,15 @@
 import Link from "next/link";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { TextField, Button } from "@mui/material";
+import { redirect } from "next/dist/server/api-utils";
 function Register() {
   const [login, showlogin] = useState();
   const [email, setemail] = useState("");
   const [pass, setpass] = useState("");
   const router = useRouter();
+  const navigate = useNavigate();
   const signup = () => {
     fetch("http://localhost:3000/api/register", {
       method: "POST",
@@ -46,6 +49,8 @@ function Register() {
       .then((data) => {
         console.log(data);
         localStorage.setItem("currentUser", data.msg);
+        // res.redirect(200, "/quiz");
+        navigate("/quiz");
       });
   };
   return (

@@ -6,16 +6,19 @@ import Header from "./Header/Header";
 import Register from "./Register/Register";
 import Footer from "./Footer/Footer";
 import { useEffect } from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Quiz from "./quiz";
 export default function Home() {
   const [logged, isloggedin] = useState("false");
 
   return (
     <div className={styles.container}>
-      <Header />
-      <Register />
-      <Quiz />
-      <Footer />
+      <Router>
+        <Header />
+        <Register />
+        <Quiz />
+        <Footer />
+      </Router>
     </div>
   );
 }
