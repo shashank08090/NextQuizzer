@@ -6,6 +6,7 @@ import Header from "./Header/Header";
 import Register from "./Register/Register";
 import Footer from "./Footer/Footer";
 import { useEffect } from "react";
+import Quiz from "./quiz";
 export default function Home() {
   const [logged, isloggedin] = useState("false");
 
@@ -13,6 +14,7 @@ export default function Home() {
     <div className={styles.container}>
       <Header />
       <Register />
+      <Quiz />
       <Footer />
     </div>
   );
