@@ -46,6 +46,7 @@ function Register() {
       .then((data) => {
         console.log(data);
         localStorage.setItem("currentUser", data.msg);
+        router.push('http://localhost:3000/user')
       });
   };
   return (
