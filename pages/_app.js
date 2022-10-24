@@ -4,6 +4,7 @@ import "./Header/Header.scss";
 import "bootstrap/dist/css/bootstrap.css";
 import "./Footer/Footer.css";
 import "./Register/Register.scss";
+import "./Loggedin/Loggedin.scss";
 function MyApp({ Component, pageProps }) {
   return (
     <>
