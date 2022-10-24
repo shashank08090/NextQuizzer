@@ -4,17 +4,12 @@ import Footer from '../Footer/Footer'
 import * as React from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
-const LoginHeader = () => {
+import Apicard from './apicard'
+const LoginHeader = (props) => {
+  console.log(props)
   return (
     <div ><Header /> 
-    <div className='logged_in'> 
-    <Card  className="card_component" variant="outlined">
-      <p>
-        hello card component
-
-      </p>
-      </Card>
-     </div>
+    <Apicard />
    
     
     <Footer /></div>
@@ -22,3 +17,4 @@ const LoginHeader = () => {
 }
 
 export default LoginHeader
+
