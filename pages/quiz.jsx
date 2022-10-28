@@ -1,4 +1,5 @@
 import * as React from 'react';
+// import { useState } from 'react';
 import Box from '@mui/material/Box';
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
@@ -7,11 +8,18 @@ import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import Header from './Header/Header'
 const Quiz = ({ users }) => {
+  // const [anim,setanim] =useState(false)
   console.log(users);
   return (
     <>
     <Header></Header>
     <h1 style={{textAlign:"center"}}>User data  from API </h1>
+    <div className='animation_container'>
+    <div className='animation_cards'><Card sx={{minwidth:275}} variant="outlined"><CardContent><Typography sx={{ fontSize: 14 }} color="text.secondary" gutterBottom>
+             <span>card animation 1</span>
+        </Typography></CardContent></Card></div>
+    </div>
+    
     <div className="user_card">
       
       

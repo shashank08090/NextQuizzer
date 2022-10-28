@@ -4,6 +4,11 @@
     width: 100vw;
     justify-content: center;
     align-items: center;
+    
+}
+@keyframes cardanimation {
+    from {padding:2px}
+    to {padding: 25px;}
 }
 .user_card {
     background-color:lightblue;
@@ -15,7 +20,39 @@
 .card_content {
     padding: 2px;
     margin: 2px;
+    animation-name: cardanimation;
+    animation-duration: 6s;
+    animation-iteration-count: infinite;
 }
 .card_container{
     margin:5px;
 }
+
+@keyframes example {
+    
+    from {margin-left: 0;}
+    to {margin-left:80vw}
+  }
+  
+  .animation_cards {
+    width: 100px;
+    height: 100px;
+    margin-left: 0;
+
+    background-color: red;
+    animation-name: example;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  .animation_container {
+    background-color: rgb(83, 161, 203);
+    height: auto;
+    width: 100vw;
+    margin: 0;
+  }
+  .no_animation{
+    width: 100px;
+    height: 100px;
+    margin-left: 0;
+
+  }
