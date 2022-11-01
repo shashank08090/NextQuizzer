@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Welcome />
-      <Quiz />
+      {/* <Quiz /> */}
 
       {/* </Router> */}
     </div>
